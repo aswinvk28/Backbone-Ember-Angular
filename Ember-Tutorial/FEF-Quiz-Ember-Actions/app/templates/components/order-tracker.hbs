@@ -1,0 +1,11 @@
+<ul>
+{{#each cart as |product|}}
+    <li class="cart-item">
+        <p>{{product.color}}</p>
+        <p>{{product.size}}</p>
+        <p>{{product.price}}</p>
+    </li>
+{{/each}}
+</ul>
+
+{{yield}}

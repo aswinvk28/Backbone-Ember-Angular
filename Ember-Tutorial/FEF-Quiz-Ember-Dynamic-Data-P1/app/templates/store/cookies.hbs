@@ -1,0 +1,15 @@
+<h1>All Cookies</h1>
+
+<ul>
+    <li>
+        {{#each model as |cookie|}}
+        <ul>
+            <li class="cookie-name">Cookie name: {{ cookie.name }}</li>
+            <li class="cookie-count">Total count: {{ cookie.count }}</li>
+            <li class="cookie-price">Price per Cookie: {{ cookie.price }}</li>
+            <li class="cookie-per-dozen">Price per Dozen: {{ cookie.price_per_dozen }}</li>
+        </ul>
+        {{/each}}
+    </li>
+</ul>
+{{outlet}}
